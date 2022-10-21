@@ -64,7 +64,7 @@ public class ICICI1_step {
     }
     @After
 	public void cleanUp() {
-    	driver.close();
+//    	driver.close();
     	driver.quit();
 	}
 }
