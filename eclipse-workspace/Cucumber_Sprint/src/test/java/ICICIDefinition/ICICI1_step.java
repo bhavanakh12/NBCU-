@@ -18,6 +18,7 @@ public class ICICI1_step {
     @Before 
     public void setUp() throws InterruptedException {
       //set system property for chrome driver
+    	
 	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
 	driver=new ChromeDriver();
 	//URL of the website
@@ -63,6 +64,7 @@ public class ICICI1_step {
     }
     @After
 	public void cleanUp() {
-		
+    	driver.close();
+    	driver.quit();
 	}
 }
